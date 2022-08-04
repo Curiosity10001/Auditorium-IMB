@@ -2,14 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class script : MonoBehaviour
+public class DestroyForce : MonoBehaviour
 {
-    public float _deltatime = 0.8f;
+    public float _deltatime = 5f;
     public float _temps;
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+      
+    }
     void Start()
     {
         _temps = Time.time;
+
     }
 
     // Update is called once per frame
@@ -20,5 +26,6 @@ public class script : MonoBehaviour
         {
             Destroy(GetComponent<ConstantForce2D>());
         }
+
     }
 }

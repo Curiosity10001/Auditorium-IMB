@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 4490143240829237784}
   - component: {fileID: 4490143240829237787}
   - component: {fileID: 8328967235732769721}
-  m_Layer: 0
+  - component: {fileID: -884872600841543776}
+  m_Layer: 3
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +177,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 5
+  m_Time: 3
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -226,8 +227,8 @@ TrailRenderer:
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
-    alignment: 0
-    textureMode: 0
+    alignment: 1
+    textureMode: 1
     shadowBias: 0.5
     generateLightingData: 0
   m_MinVertexDistance: 0.1
@@ -244,3 +245,17 @@ ConstantForce2D:
   m_Force: {x: 0, y: 0}
   m_RelativeForce: {x: 15, y: 0}
   m_Torque: 0
+--- !u!114 &-884872600841543776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4490143240829237861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3473f7abcf06ea45912b527fe420733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _deltatime: 5
+  _temps: 0

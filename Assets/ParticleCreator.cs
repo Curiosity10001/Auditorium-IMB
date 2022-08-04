@@ -8,6 +8,7 @@ public class ParticleCreator : MonoBehaviour
     public Rigidbody2D _rigidbodyQ;
     public GameObject _particle;
     public float _temps;
+
     public float _deltatime = 0.5f;
     public float _rayon = 6f;
 
