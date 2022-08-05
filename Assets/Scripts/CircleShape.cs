@@ -10,7 +10,7 @@ public class CircleShape : MonoBehaviour
     [Min(3)]
     [SerializeField] private int _segmentCount;
 
-    [Range(0.01f, 5)]
+    [Range(0.01f, 100)]
     [SerializeField] private float _radius;
 
     [Range(0, 1)]

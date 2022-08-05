@@ -9,7 +9,7 @@ public class ParticleCreator : MonoBehaviour
     public GameObject _particle;
     public float _temps;
 
-    public float _deltatime = 0.5f;
+    public float _deltatime = 0.2f;
     public float _rayon = 6f;
 
     // Start is called before the first frame update

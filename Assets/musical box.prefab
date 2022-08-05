@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5567446467399575970}
   - component: {fileID: 1112385898068019714}
   m_Layer: 0
-  m_Name: Capsule (2)
+  m_Name: Capsule (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3024995349356827338}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1824729022386225713
 MeshFilter:
@@ -63,7 +63,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 7db85eaef95198f4f856529877079647, type: 2}
-  - {fileID: 2100000, guid: 9f1833301d2093d4fa640f0f22e8fe09, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -109,7 +108,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3024995349356827338}
   - component: {fileID: 1832423037611525947}
-  - component: {fileID: 5048440781662743955}
+  - component: {fileID: 8413531864572033870}
+  - component: {fileID: 6047434404301287869}
   m_Layer: 0
   m_Name: musical box
   m_TagString: Untagged
@@ -126,14 +126,14 @@ Transform:
   m_GameObject: {fileID: 2633396113856195798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.27, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 15, y: 20, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4767761853002837416}
-  - {fileID: 2086661379901481200}
-  - {fileID: 3947321786906086566}
-  - {fileID: 6233457889230528420}
   - {fileID: 3486587134169166107}
+  - {fileID: 2086661379901481200}
+  - {fileID: 6233457889230528420}
+  - {fileID: 3947321786906086566}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -157,7 +157,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.6172953
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -233,7 +233,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5048440781662743955
+--- !u!114 &8413531864572033870
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -245,11 +245,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd9effaf53cc6bb49b377df9ce9c797a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumestick1: {fileID: 5720042823886963149}
-  volumestick2: {fileID: 5270045314045969918}
-  volumestick3: {fileID: 5567446467399575970}
-  volumestick4: {fileID: 1847602920068559294}
-  volumestick5: {fileID: 4758299387473334310}
+  _volumestick1: {fileID: 5720042823886963149}
+  _volumestick2: {fileID: 4758299387473334310}
+  _volumestick3: {fileID: 5270045314045969918}
+  _volumestick4: {fileID: 1847602920068559294}
+  _volumestick5: {fileID: 5567446467399575970}
+  _volumeoff: {fileID: 2100000, guid: 7db85eaef95198f4f856529877079647, type: 2}
+  _volumeon: {fileID: 2100000, guid: 9f1833301d2093d4fa640f0f22e8fe09, type: 2}
+  _audioSource: {fileID: 1832423037611525947}
+--- !u!61 &6047434404301287869
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2633396113856195798}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.1565, y: -0.66847396}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.281956, y: 2.336948}
+  m_EdgeRadius: 0
 --- !u!1 &3598783178741154170
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,7 +292,7 @@ GameObject:
   - component: {fileID: 4758299387473334310}
   - component: {fileID: 3346376792738811680}
   m_Layer: 0
-  m_Name: Capsule (4)
+  m_Name: Capsule (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -282,7 +311,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3024995349356827338}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2360845912576140010
 MeshFilter:
@@ -313,7 +342,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 7db85eaef95198f4f856529877079647, type: 2}
-  - {fileID: 2100000, guid: 9f1833301d2093d4fa640f0f22e8fe09, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -362,7 +390,7 @@ GameObject:
   - component: {fileID: 5720042823886963149}
   - component: {fileID: 1326337097368623973}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Capsule (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -412,7 +440,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 7db85eaef95198f4f856529877079647, type: 2}
-  - {fileID: 2100000, guid: 9f1833301d2093d4fa640f0f22e8fe09, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -461,7 +488,7 @@ GameObject:
   - component: {fileID: 5270045314045969918}
   - component: {fileID: 7752280651023646601}
   m_Layer: 0
-  m_Name: Capsule (1)
+  m_Name: Capsule (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -480,7 +507,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3024995349356827338}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7679079127816267854
 MeshFilter:
@@ -511,7 +538,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 7db85eaef95198f4f856529877079647, type: 2}
-  - {fileID: 2100000, guid: 9f1833301d2093d4fa640f0f22e8fe09, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -560,7 +586,7 @@ GameObject:
   - component: {fileID: 1847602920068559294}
   - component: {fileID: 318220240987375279}
   m_Layer: 0
-  m_Name: Capsule (3)
+  m_Name: Capsule (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -610,7 +636,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 7db85eaef95198f4f856529877079647, type: 2}
-  - {fileID: 2100000, guid: 9f1833301d2093d4fa640f0f22e8fe09, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
