@@ -697,7 +697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3024995349356827338, guid: 24381af17bb356944b00cd749e116fcb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6
+      value: 16.3
       objectReference: {fileID: 0}
     - target: {fileID: 3024995349356827338, guid: 24381af17bb356944b00cd749e116fcb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1012,7 +1012,6 @@ MonoBehaviour:
   _audioSource4: {fileID: 234016705}
   _audioSource5: {fileID: 1167599887}
   _audioSource6: {fileID: 1250704229}
-  _audioSource7: {fileID: 0}
 --- !u!82 &1250704229 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 1832423037611525947, guid: 24381af17bb356944b00cd749e116fcb, type: 3}

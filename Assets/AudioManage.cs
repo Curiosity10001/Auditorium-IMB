@@ -11,7 +11,7 @@ public class AudioManage : MonoBehaviour
     public AudioSource _audioSource4;
     public AudioSource _audioSource5;
     public AudioSource _audioSource6;
-    public AudioSource _audioSource7;
+    
  
 
     // Start is called before the first frame update
@@ -24,7 +24,7 @@ public class AudioManage : MonoBehaviour
         _audioSource4.Play();
         _audioSource5.Play();
         _audioSource6.Play();
-        _audioSource7.Play();
+        
       
     }
 
