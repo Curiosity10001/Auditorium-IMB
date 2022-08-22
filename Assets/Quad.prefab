@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 4490143240829237787}
   - component: {fileID: 8328967235732769721}
   - component: {fileID: -884872600841543776}
-  - component: {fileID: 7546418114127881232}
   m_Layer: 3
   m_Name: Quad
   m_TagString: Untagged
@@ -260,15 +259,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _deltatime: 5
   _temps: 0
---- !u!114 &7546418114127881232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4490143240829237861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb04f2f460a37534f97ea9d9cc8d7a85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

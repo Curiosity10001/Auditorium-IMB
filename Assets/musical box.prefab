@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 1832423037611525947}
   - component: {fileID: 8413531864572033870}
   - component: {fileID: 6047434404301287869}
+  - component: {fileID: -1438610908963080051}
   m_Layer: 0
   m_Name: musical box
   m_TagString: Untagged
@@ -279,6 +280,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.281956, y: 2.336948}
   m_EdgeRadius: 0
+--- !u!114 &-1438610908963080051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2633396113856195798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb04f2f460a37534f97ea9d9cc8d7a85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mBox: {fileID: 0}
+  _info: {x: -100, y: -100}
 --- !u!1 &3598783178741154170
 GameObject:
   m_ObjectHideFlags: 0
